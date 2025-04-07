@@ -81,7 +81,7 @@ const Navbar = () => {
   return (
     <div className="flex justify-center relative font-inter">
       {/* Desktop Menu */}
-      <div className="hidden sm:flex font-inter w-full sm:w-3/4 md:w-1/2 lg:w-1/4 rounded-full justify-center gap-2 sm:gap-4 bg-black text-zinc-400 text-sm sm:text-base md:text-lg lg:text-xl my-2 sm:my-3">
+      <div className="hidden sm:flex font-inter w-full sm:w-3/4 md:w-1/2 lg:w-[38%] rounded-full justify-center gap-2 sm:gap-4 bg-black text-zinc-400 text-sm sm:text-base md:text-lg lg:text-xl my-2 sm:my-3">
         <NavLinks />
       </div>
 
