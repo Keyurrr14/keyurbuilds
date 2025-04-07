@@ -79,14 +79,14 @@ const Navbar = () => {
   );
 
   return (
-    <div className="flex justify-center relative font-inter">
+    <div className="flex justify-center relative font-inter animate-bounce-in">
       {/* Desktop Menu */}
-      <div className="hidden sm:flex font-inter w-full sm:w-3/4 md:w-1/2 lg:w-[38%] rounded-full justify-center gap-2 sm:gap-4 bg-black text-zinc-400 text-sm sm:text-base md:text-lg lg:text-xl my-2 sm:my-3">
+      <div className="hidden sm:flex font-inter w-full sm:w-3/4 md:w-1/2 lg:w-[38%] rounded-full justify-center gap-2 sm:gap-4 bg-black text-zinc-400 text-sm sm:text-base md:text-lg lg:text-xl my-2 sm:my-3 animate-bounce-in">
         <NavLinks />
       </div>
 
       {/* Mobile Menu Button */}
-      <div className="sm:hidden w-full flex justify-between bg-black rounded-full px-4 py-3 mt-3 mx-2">
+      <div className="sm:hidden w-full flex justify-between bg-black rounded-full px-4 py-3 mt-3 mx-2 animate-bounce-in">
         <div>
           <img className="h-6" src={sun} alt="" />
         </div>
