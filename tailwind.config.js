@@ -22,6 +22,11 @@ export default {
             transform: "scale(1) translateY(0)",
           },
         },
+        draw: {
+          "100%": {
+            strokeDashoffset: 0,
+          },
+        },
       },
       animation: {
         floatUp: "floatUp 1.5s ease-out forwards",
