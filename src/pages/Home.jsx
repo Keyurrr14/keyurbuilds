@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import AnimateBlob from "../components/AnimateBlob";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -56,6 +57,8 @@ const Home = () => {
           My latest work
         </h1>
       </div>
+
+      <Footer />
     </>
   );
 };
