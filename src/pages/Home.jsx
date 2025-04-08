@@ -7,6 +7,24 @@ import KshitijBlack from "../assets/projects/Kshitij/KshitijBlack.png";
 import KshitijTextBlack from "../assets/projects/Kshitij/KshitijTextBlack.png";
 import KshitijPoster from "../assets/projects/Kshitij/KshitijPoster.png";
 import KshitijPoster2 from "../assets/projects/Kshitij/KshitijPoster2.png";
+import MCCLogo from "../assets/projects/MCC/MCCLogo.png";
+import MCCText from "../assets/projects/MCC/MCCText.png";
+import MCCPoster from "../assets/projects/MCC/MCCPoster.png";
+import MCCPoster2 from "../assets/projects/MCC/MCCPoster2.png";
+import TEDxLogo from "../assets/projects/TedxMithibaiCollege/TEDxLogo.png";
+import TEDxPoster from "../assets/projects/TedxMithibaiCollege/TEDxPoster.png";
+import TEDxPoster2 from "../assets/projects/TedxMithibaiCollege/TEDxPoster2.png";
+import AutoLinkLogo from "../assets/projects/AutoLink/AutoLinkLogo.png";
+import AutoLinkPoster from "../assets/projects/AutoLink/AutoLinkPoster.png";
+import AutoLinkPoster2 from "../assets/projects/AutoLink/AutoLinkPoster2.png";
+import SplitEasyLogo from "../assets/projects/SplitEasy/SplitEasyLogo.png";
+import SplitEasyPoster from "../assets/projects/SplitEasy/SplitEasyPoster.png";
+import SplitEasyPoster2 from "../assets/projects/SplitEasy/SplitEasyPoster2.png";
+import SquareFootLogo from "../assets/projects/SquareFoot/SquareFootLogo.png";
+import SquareFootPoster from "../assets/projects/SquareFoot/SquareFootPoster.png";
+import SquareFootPoster2 from "../assets/projects/SquareFoot/SquareFootPoster2.png";
+import MoronMediaPoster from "../assets/projects/MoronMedia/MoronMediaPoster.png";
+import MoronMediaPoster2 from "../assets/projects/MoronMedia/MoronMediaPoster2.png";
 
 const Home = () => {
   return (
@@ -69,6 +87,47 @@ const Home = () => {
         description="Kshitij, Mithibai College's annual cultural festival, is one of Asia’s biggest, featuring 45+ events, 700+ committee members, and over 50,000 attendees. With Para Events, celebrity performances, and grand prizes, the 17th edition promises an unforgettable celebration."
         poster1={KshitijPoster}
         poster2={KshitijPoster2}
+      />
+      <ProjectCard
+        logo={TEDxLogo}
+        logoText="TEDxMithibaiCollege"
+        description="Designed and Developed the official website for TEDxMithibaiCollege — an independently organized TED event where TED Talks videos and live speakers come together to spark deep discussions and meaningful connections. Guided by the spirit of TED’s global mission to spread ideas, our self-organized event creates a TED-like experience at a local level."
+        poster1={TEDxPoster}
+        poster2={TEDxPoster2}
+      />
+      <ProjectCard
+        logo={AutoLinkLogo}
+        logoText="AutoLink"
+        description="This project uses H3 geospatial tech to connect passengers and rickshaw drivers in real time, improving visibility, efficiency, and communication at rickshaw stands."
+        poster1={AutoLinkPoster}
+        poster2={AutoLinkPoster2}
+      />
+      <ProjectCard
+        logoText="MoronMedia"
+        description="Moron Media is a leading creative agency specializing in video production, campaign ideation, and post-production for global brands and events. From iconic concert tours and fashion films to viral music videos and large-scale expos, they deliver bold, impactful content that pushes creative boundaries."
+        poster1={MoronMediaPoster}
+        poster2={MoronMediaPoster2}
+      />
+      <ProjectCard
+        logo={SquareFootLogo}
+        logoText="squarefoot.studio"
+        description="Squarefoot Studio is a Mumbai-based architecture and interior design firm specializing in design and turnkey projects. With a passionate and experienced team, they’ve transformed residential, commercial, and hospitality spaces into timeless masterpieces."
+        poster1={SquareFootPoster}
+        poster2={SquareFootPoster2}
+      />
+      <ProjectCard
+        logo={SplitEasyLogo}
+        logoText="SplitEasy"
+        description="SplitEasy is a smart mobile app that simplifies group expense splitting using advanced OCR technology, allowing users to snap photos of bills for automatic text extraction. It offers itemized expense allocation and seamless contact integration for quick, accurate, and hassle-free cost sharing."
+        poster1={SplitEasyPoster}
+        poster2={SplitEasyPoster2}
+      />
+      <ProjectCard
+        logo={MCCLogo}
+        logoText={MCCText}
+        description="The Mithibai Cultural Committee is the heart of all things fun and fabulous at Mithibai, repping the college at fests like Mood Indigo and Umang, while also throwing epic in-house events like Kshitij. With a streak of big wins and loads of talent, it’s basically the cool squad that puts Mithibai on the cultural map!"
+        poster1={MCCPoster}
+        poster2={MCCPoster2}
       />
       <Footer />
     </>

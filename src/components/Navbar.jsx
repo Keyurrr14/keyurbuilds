@@ -40,7 +40,7 @@ const Navbar = () => {
             setIsMenuOpen(false);
           }}
         >
-          Work
+          Story
         </a>
       </div>
       <div
@@ -56,7 +56,7 @@ const Navbar = () => {
             setIsMenuOpen(false);
           }}
         >
-          Story
+          Work
         </a>
       </div>
       <div
@@ -86,7 +86,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu Button */}
-      <div className="sm:hidden w-full flex justify-between bg-black rounded-full px-4 py-3 mt-3 mx-2 animate-bounce-in">
+      <div className="sm:hidden w-full flex justify-between bg-black rounded-full px-4 py-3 mt-3 mx-2 animate-bounce-in z-50">
         <div>
           <img className="h-6" src={sun} alt="" />
         </div>
@@ -115,12 +115,19 @@ const Navbar = () => {
         </div>
       </div>
 
+      {isMenuOpen && (
+      <div
+        onClick={toggleMenu}
+        className="sm:hidden fixed inset-0 z-40 bg-black/30 backdrop-blur-sm transition-opacity duration-300"
+      ></div>
+    )}
+
       {/* Mobile Menu */}
       <div
-        className={`sm:hidden absolute top-14 sm:right-6 md:right-12 lg:right-16 mt-3 w-[95%] bg-black rounded-3xl shadow-lg transform transition-all duration-300 ease-in-out z-50 ${
+        className={`sm:hidden absolute top-14 left-1/2 -translate-x-1/2 mt-3 w-[95%] bg-black rounded-3xl shadow-lg z-50 origin-top transform transition-all duration-300 ease-in-out ${
           isMenuOpen
-            ? "opacity-100 translate-y-0"
-            : "opacity-0 -translate-y-2 pointer-events-none"
+            ? "scale-y-100 opacity-100"
+            : "scale-y-0 opacity-0 pointer-events-none"
         }`}
       >
         <div className="flex flex-col items-center py-1 gap-2 text-zinc-400 text-lg">

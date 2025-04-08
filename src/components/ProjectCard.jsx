@@ -4,16 +4,25 @@ import arrow from "../assets/arrow.svg";
 const ProjectCard = ({ logo, logoText, description, poster1, poster2 }) => {
   return (
     <div className="px-4 sm:px-20 mt-10">
-      <div className="bg-[#F2F2F2] rounded-3xl font-inter overflow-hidden group relative">
+      <div className="bg-[#F2F2F2] rounded-3xl font-inter overflow-hidden group relative cursor-pointer">
         <div className="absolute -top-64 -right-80 sm:-top-20 sm:-right-10 w-[500px] h-[500px] rounded-full blur-[100px] transition-all duration-300 group-hover:bg-yellow-400 group-hover:blur-[200px] sm:group-hover:blur-[150px] z-0"></div>
         <div className="relative z-10">
           <div className="flex items-center justify-between px-4 sm:px-14 py-5">
-            <div className="flex items-center sm:gap-2">
+            <div className="flex items-center gap-1 sm:gap-4">
               <img src={logo} alt="" className="h-16 sm:h-28" />
-              <img src={logoText} alt="" className="h-10 sm:h-20" />
+              {logoText.includes(".png") ||
+              logoText.includes(".jpg") ||
+              logoText.includes(".jpeg") ||
+              logoText.includes(".svg") ? (
+                <img src={logoText} alt="" className="h-10 sm:h-20" />
+              ) : (
+                <span className="text-lg sm:text-5xl font-bold">
+                  {logoText}
+                </span>
+              )}
             </div>
             <div>
-              <img src={arrow} alt="" className="h-10 sm:h-20" />
+              <img src={arrow} alt="" className="h-10 sm:h-20 hidden lg:block" />
             </div>
           </div>
           <p className="text-lg sm:text-xl text-zinc-500 font-medium px-4 sm:px-14 w-full sm:w-5/6">

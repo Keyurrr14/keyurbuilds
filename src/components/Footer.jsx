@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Github from "../assets/socials/Github.png";
 import LinkedIn from "../assets/socials/LinkedIn.png";
 import Instagram from "../assets/socials/Instagram.png";
@@ -7,8 +7,40 @@ import Resume from "../assets/socials/Resume.png";
 import Mail from "../assets/mail.svg";
 
 const Footer = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const footerRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(entry.target);
+        }
+      },
+      {
+        threshold: 0.1,
+      }
+    );
+
+    if (footerRef.current) {
+      observer.observe(footerRef.current);
+    }
+
+    return () => {
+      if (footerRef.current) {
+        observer.unobserve(footerRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-between bg-zinc-200 px-3 sm:px-5 py-5 mx-2 sm:mx-10 my-5 rounded-3xl gap-8 md:gap-8">
+    <div
+      ref={footerRef}
+      className={`flex flex-col lg:flex-row items-center justify-between bg-[#F2F2F2] px-3 sm:px-5 py-5 mx-2 sm:mx-10 my-5 rounded-3xl gap-8 md:gap-8 ${
+        isVisible ? "animate-bounce-in" : ""
+      }`}
+    >
       <div className="flex items-center gap-2 sm:ml-5">
         <img src={Mail} alt="Mail" className="w-8 sm:w-10 h-8 sm:h-10" />
         <a
