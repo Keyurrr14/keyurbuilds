@@ -2,6 +2,11 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import AnimateBlob from "../components/AnimateBlob";
 import Footer from "../components/Footer";
+import ProjectCard from "../components/ProjectCard";
+import KshitijBlack from "../assets/projects/Kshitij/KshitijBlack.png";
+import KshitijTextBlack from "../assets/projects/Kshitij/KshitijTextBlack.png";
+import KshitijPoster from "../assets/projects/Kshitij/KshitijPoster.png";
+import KshitijPoster2 from "../assets/projects/Kshitij/KshitijPoster2.png";
 
 const Home = () => {
   return (
@@ -58,6 +63,13 @@ const Home = () => {
         </h1>
       </div>
 
+      <ProjectCard
+        logo={KshitijBlack}
+        logoText={KshitijTextBlack}
+        description="Kshitij, Mithibai College's annual cultural festival, is one of Asia’s biggest, featuring 45+ events, 700+ committee members, and over 50,000 attendees. With Para Events, celebrity performances, and grand prizes, the 17th edition promises an unforgettable celebration."
+        poster1={KshitijPoster}
+        poster2={KshitijPoster2}
+      />
       <Footer />
     </>
   );

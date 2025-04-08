@@ -1,0 +1,40 @@
+import React from "react";
+import arrow from "../assets/arrow.svg";
+
+const ProjectCard = ({ logo, logoText, description, poster1, poster2 }) => {
+  return (
+    <div className="px-4 sm:px-20 mt-10">
+      <div className="bg-[#F2F2F2] rounded-3xl font-inter overflow-hidden group relative">
+        <div className="absolute -top-64 -right-80 sm:-top-20 sm:-right-10 w-[500px] h-[500px] rounded-full blur-[100px] transition-all duration-300 group-hover:bg-yellow-400 group-hover:blur-[200px] sm:group-hover:blur-[150px] z-0"></div>
+        <div className="relative z-10">
+          <div className="flex items-center justify-between px-4 sm:px-14 py-5">
+            <div className="flex items-center sm:gap-2">
+              <img src={logo} alt="" className="h-16 sm:h-28" />
+              <img src={logoText} alt="" className="h-10 sm:h-20" />
+            </div>
+            <div>
+              <img src={arrow} alt="" className="h-10 sm:h-20" />
+            </div>
+          </div>
+          <p className="text-lg sm:text-xl text-zinc-500 font-medium px-4 sm:px-14 w-full sm:w-5/6">
+            {description}
+          </p>
+          <div className="flex items-center justify-center gap-2 mt-14 sm:mt-28">
+            <img
+              src={poster1}
+              alt=""
+              className="h-[60vw] sm:h-[30vw] sm:-mb-10 -rotate-6 transition-all duration-300 border-4 border-white rounded-3xl group-hover:-translate-y-7 group-hover:-rotate-12"
+            />
+            <img
+              src={poster2}
+              alt=""
+              className="hidden sm:block h-[50vw] sm:h-[30vw] -mb-10 rotate-3 transition-all duration-300 border-4 border-white rounded-3xl group-hover:-translate-y-7 group-hover:rotate-12"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ProjectCard;
