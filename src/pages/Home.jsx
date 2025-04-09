@@ -32,7 +32,7 @@ const Home = () => {
     <>
       <Navbar />
       <AnimateBlob />
-      <div className="md:w-2/3 lg:w-1/2 mx-4 md:mx-10 mt-28 md:mt-36 lg:mt-48">
+      <div id="hey" className="md:w-2/3 lg:w-1/2 mx-4 md:mx-10 mt-28 md:mt-36 lg:mt-56">
         <h1 className="font-inter font-medium text-lg md:text-2xl lg:text-4xl text-zinc-500">
           Howdy! Meet your trusted design partner, <br /> bringing fresh ideas
           to life in tech, product, and beyond.
@@ -73,7 +73,7 @@ const Home = () => {
         </svg>
       </div>
 
-      <h1 className="w-full md:w-2/3 font-inter font-medium text-3xl sm:text-5xl md:text-7xl mx-4 sm:mx-6 md:mx-10 mt-20 sm:mt-32 md:mt-52">
+      <h1 id="story" className="w-full md:w-2/3 font-inter font-medium text-3xl sm:text-5xl md:text-7xl mx-4 sm:mx-6 md:mx-10 mt-20 sm:mt-32 md:mt-52">
         Crafting the web, chasing sunsets, and scoring goals.
       </h1>
       <div className="flex flex-col lg:flex-row items-center justify-center gap-4 mx-4 sm:mx-6 md:mx-10 mt-6 sm:mt-8 md:mt-10">
@@ -103,7 +103,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="md:mt-48 mt-20 w-full sm:w-3/4 md:w-full flex flex-col items-center justify-center mx-auto px-4">
+      <div id="work" className="md:mt-48 mt-20 w-full sm:w-3/4 md:w-full flex flex-col items-center justify-center mx-auto px-4">
         <h1 className="font-caveat text-2xl sm:text-4xl md:text-5xl text-zinc-500 font-bold text-center sm:ml-0 md:ml-96">
           from 2022 'til today'
         </h1>

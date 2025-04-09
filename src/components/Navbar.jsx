@@ -9,6 +9,20 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const offset = 150;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
   const NavLinks = () => (
     <>
       <div
@@ -22,25 +36,13 @@ const Navbar = () => {
             e.preventDefault();
             setActiveLink("hey");
             setIsMenuOpen(false);
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            });
           }}
         >
           Hey
-        </a>
-      </div>
-      <div
-        className={`px-2 sm:px-3 md:px-4 py-1 sm:py-2 my-1 sm:my-2 rounded-full ${
-          activeLink === "work" ? "bg-[#4D4000] text-yellow-400" : ""
-        }`}
-      >
-        <a
-          href="#"
-          onClick={(e) => {
-            e.preventDefault();
-            setActiveLink("work");
-            setIsMenuOpen(false);
-          }}
-        >
-          Story
         </a>
       </div>
       <div
@@ -49,11 +51,29 @@ const Navbar = () => {
         }`}
       >
         <a
-          href="#"
+          href="#story"
           onClick={(e) => {
             e.preventDefault();
             setActiveLink("story");
             setIsMenuOpen(false);
+            scrollToSection("story");
+          }}
+        >
+          Story
+        </a>
+      </div>
+      <div
+        className={`px-2 sm:px-3 md:px-4 py-1 sm:py-2 my-1 sm:my-2 rounded-full ${
+          activeLink === "work" ? "bg-[#4D4000] text-yellow-400" : ""
+        }`}
+      >
+        <a
+          href="#work"
+          onClick={(e) => {
+            e.preventDefault();
+            setActiveLink("work");
+            setIsMenuOpen(false);
+            scrollToSection("work");
           }}
         >
           Work
@@ -70,6 +90,10 @@ const Navbar = () => {
             e.preventDefault();
             setActiveLink("chat");
             setIsMenuOpen(false);
+            window.scrollTo({
+              top: document.documentElement.scrollHeight,
+              behavior: "smooth",
+            });
           }}
         >
           Chat
@@ -81,7 +105,7 @@ const Navbar = () => {
   return (
     <div className="flex justify-center relative font-inter animate-bounce-in">
       {/* Desktop Menu */}
-      <div className="hidden sm:flex font-inter w-full sm:w-3/4 md:w-1/2 lg:w-[38%] rounded-full justify-center gap-2 sm:gap-4 bg-black text-zinc-400 text-sm sm:text-base md:text-lg lg:text-xl my-2 sm:my-3 animate-bounce-in">
+      <div className="hidden fixed sm:flex font-inter w-full sm:w-3/4 md:w-1/2 lg:w-[38%] rounded-full justify-center gap-2 sm:gap-4 bg-black text-zinc-400 text-sm sm:text-base md:text-lg lg:text-xl my-2 sm:my-3 animate-bounce-in z-50">
         <NavLinks />
       </div>
 
@@ -116,11 +140,11 @@ const Navbar = () => {
       </div>
 
       {isMenuOpen && (
-      <div
-        onClick={toggleMenu}
-        className="sm:hidden fixed inset-0 z-40 bg-black/30 backdrop-blur-sm transition-opacity duration-300"
-      ></div>
-    )}
+        <div
+          onClick={toggleMenu}
+          className="sm:hidden fixed inset-0 z-40 bg-black/30 backdrop-blur-sm transition-opacity duration-300"
+        ></div>
+      )}
 
       {/* Mobile Menu */}
       <div
