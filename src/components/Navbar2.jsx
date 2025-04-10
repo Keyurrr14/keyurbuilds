@@ -7,7 +7,7 @@ const Navbar2 = () => {
   return (
     <div className="flex justify-center relative font-inter animate-bounce-in">
       {/* Desktop and Mobile Navbar */}
-      <div className="fixed flex font-inter w-[95%] sm:w-3/4 md:w-1/2 lg:w-[30%] rounded-full justify-between items-center bg-black text-zinc-400 text-sm sm:text-base md:text-lg lg:text-xl my-2 sm:my-3 animate-bounce-in z-50 px-4 py-3">
+      <div className="flex font-inter w-[95%] sm:w-3/4 md:w-1/2 lg:w-[30%] rounded-full justify-between items-center bg-black text-zinc-400 text-sm sm:text-base md:text-lg lg:text-xl my-2 sm:my-3 animate-bounce-in z-50 px-4 py-3">
         <button
           onClick={() => navigate(-1)}
           className="text-zinc-400 hover:text-white transition-colors group"
