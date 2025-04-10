@@ -1,13 +1,74 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import Navbar2 from "../components/Navbar2";
+import KshitijLogo from "../assets/projects/Kshitij/KshitijBlack.png";
+import KshitijTextBlack from "../assets/projects/Kshitij/KshitijTextBlack.png";
+import KshitijPoster from "../assets/projects/Kshitij/KshitijPoster.png";
+import Main from "../assets/projects/Kshitij/Main.png";
+import Footer from "../components/Footer";
 
 const Kshitij = () => {
   return (
     <>
-      <Navbar />
-      <div className="flex flex-col items-center justify-center h-screen">
-        <h1 className="text-4xl font-bold">Kshitij</h1>
+      <Navbar2 />
+      <div className="mt-24 w-full min-h-screen bg-[#F2F2F2]">
+        <div className="px-4 sm:px-8 md:px-12 lg:px-20 py-6 sm:py-8 md:py-10">
+          <img
+            src={KshitijLogo}
+            alt=""
+            className="h-16 sm:h-20 md:h-24 lg:h-28"
+          />
+          <img
+            src={KshitijTextBlack}
+            alt=""
+            className="h-14 sm:h-16 md:h-20 lg:h-24"
+          />
+        </div>
+
+        <div className="px-4 sm:px-8 md:px-12 lg:px-20 w-full lg:w-4/5">
+          <p className="font-inter font-medium text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 md:mb-10">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Voluptatibus in cupiditate provident, autem alias commodi minus,
+            illo iste consequatur quibusdam odit temporibus reprehenderit
+            voluptate deserunt ducimus eaque, necessitatibus est? Doloremque.
+          </p>
+          <p className="font-inter font-medium text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 md:mb-10">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Voluptatibus in cupiditate provident, autem alias commodi minus,
+            illo iste consequatur quibusdam odit temporibus reprehenderit
+            voluptate deserunt ducimus eaque, necessitatibus est? Doloremque.
+          </p>
+          <p className="font-inter font-medium text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 md:mb-10">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Voluptatibus in cupiditate provident, autem alias commodi minus,
+            illo iste consequatur quibusdam odit temporibus reprehenderit
+            voluptate deserunt ducimus eaque, necessitatibus est? Doloremque.
+          </p>
+        </div>
+
+        <div className="px-4 sm:px-8 md:px-12 lg:px-20">
+          <div className="w-full rounded-lg overflow-hidden">
+            <img src={Main} alt="" className="h-full w-full object-contain" />
+          </div>
+        </div>
+
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-2 px-4 sm:px-8 md:px-12 lg:px-20 my-4 sm:my-2 pb-6 sm:pb-10">
+          <div className="w-full sm:w-1/2 rounded-lg overflow-hidden">
+            <img
+              src={KshitijPoster}
+              alt=""
+              className="h-full w-full object-contain"
+            />
+          </div>
+          <div className="w-full sm:w-1/2 rounded-lg overflow-hidden">
+            <img
+              src={KshitijPoster}
+              alt=""
+              className="h-full w-full object-contain"
+            />
+          </div>
+        </div>
       </div>
+      <Footer />
     </>
   );
 };

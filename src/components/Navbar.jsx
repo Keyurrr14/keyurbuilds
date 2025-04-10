@@ -110,7 +110,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu Button */}
-      <div className="sm:hidden w-full flex justify-between bg-black rounded-full px-4 py-3 mt-3 mx-2 animate-bounce-in z-50">
+      <div className="fixed sm:hidden w-[90%] flex justify-between bg-black rounded-full px-4 py-3 mt-3 mx-2 animate-bounce-in z-50">
         <div>
           <img className="h-6" src={sun} alt="" />
         </div>

@@ -14,6 +14,7 @@ const ProjectCard = ({
 
   const handleClick = () => {
     navigate(route);
+    window.scrollTo(0, 0);
   };
 
   return (
