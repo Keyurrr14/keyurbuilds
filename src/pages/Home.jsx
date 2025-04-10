@@ -26,6 +26,7 @@ import SquareFootPoster2 from "../assets/projects/SquareFoot/SquareFootPoster2.p
 import MoronMediaPoster from "../assets/projects/MoronMedia/MoronMediaPoster.png";
 import MoronMediaPoster2 from "../assets/projects/MoronMedia/MoronMediaPoster2.png";
 import AboutMe from "../assets/AboutMe.mp4";
+import "../pages/connect.css";
 
 const Home = () => {
   return (
@@ -178,6 +179,17 @@ const Home = () => {
         poster2={MCCPoster2}
         route="/mcc"
       />
+
+      <h1 className="w-2/3 lg:w-1/3 mx-auto font-caveat text-zinc-400 font-medium text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center mt-20 -rotate-6">
+        Tap this 'tiny' button to connect with me =)
+      </h1>
+      <div className="flex justify-center mt-28 mb-32">
+        <button type="button" className="button">
+          <div className="button-top">Connect</div>
+          <div className="button-bottom"></div>
+          <div className="button-base"></div>
+        </button>
+      </div>
       <Footer />
     </>
   );
