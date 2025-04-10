@@ -110,7 +110,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu Button */}
-      <div className="fixed sm:hidden w-[90%] flex justify-between bg-black rounded-full px-4 py-3 mt-3 mx-2 animate-bounce-in z-50">
+      <div className="fixed top-2 sm:hidden w-[90%] flex justify-between bg-black rounded-full px-4 py-3 mt-3 mx-2 animate-bounce-in z-50">
         <div>
           <img className="h-6" src={sun} alt="" />
         </div>
@@ -148,7 +148,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`sm:hidden absolute top-14 left-1/2 -translate-x-1/2 mt-3 w-[95%] bg-black rounded-3xl shadow-lg z-50 origin-top transform transition-all duration-300 ease-in-out ${
+        className={`sm:hidden fixed top-14 left-1/2 -translate-x-1/2 mt-10 w-[95%] bg-black rounded-3xl shadow-lg z-50 origin-top transform transition-all duration-300 ease-in-out ${
           isMenuOpen
             ? "scale-y-100 opacity-100"
             : "scale-y-0 opacity-0 pointer-events-none"
