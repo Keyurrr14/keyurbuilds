@@ -181,15 +181,28 @@ const Home = () => {
       />
 
       <h1 className="w-2/3 lg:w-1/3 mx-auto font-caveat text-zinc-400 font-medium text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center mt-20 -rotate-6">
-        Tap this 'tiny' button to connect with me =)
+        Tap this 'tiny' button to listen song of day =)
       </h1>
-      <div className="flex justify-center mt-28 mb-32">
+      <div className="flex items-center justify-center pt-10 pb-16">
+          <iframe
+            style={{ borderRadius: "12px" }}
+            className="px-10 md:px-36"
+            src="https://embed.music.apple.com/in/album/ho-hey/1754219081?i=1754219314"
+            width="100%"
+            height="152"
+            frameBorder="0"
+            allowFullScreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+        </div>
+      {/* <div className="flex justify-center mt-28 mb-32">
         <button type="button" className="button">
           <div className="button-top">Connect</div>
           <div className="button-bottom"></div>
           <div className="button-base"></div>
         </button>
-      </div>
+      </div> */}
       <Footer />
     </>
   );
