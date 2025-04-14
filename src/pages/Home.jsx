@@ -100,7 +100,7 @@ const Home = () => {
           </p>
         </div>
         <div className="lg:w-3/5 h-screen bg-[#F2F2F2] rounded-3xl order-1 lg:order-2">
-          <video
+          {/* <video
             src={AboutMe}
             autoPlay
             muted
@@ -108,7 +108,7 @@ const Home = () => {
             controls={false}
             playsInline
             className="w-full h-full object-cover rounded-3xl"
-          ></video>
+          ></video> */}
         </div>
       </div>
 
@@ -181,7 +181,7 @@ const Home = () => {
       />
 
       <h1 className="w-2/3 lg:w-1/3 mx-auto font-caveat text-zinc-400 font-medium text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center mt-20 -rotate-6">
-        Tap this 'tiny' button to listen song of day =)
+        Tap this 'tiny' button to listen today's jam =)
       </h1>
       <div className="flex items-center justify-center pt-10 pb-16">
           <iframe
