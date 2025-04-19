@@ -99,8 +99,8 @@ const Home = () => {
             for runs, and traveling to new places.
           </p>
         </div>
-        <div className="lg:w-3/5 h-screen bg-[#F2F2F2] rounded-3xl order-1 lg:order-2">
-          {/* <video
+        <div className="lg:w-3/5 h-[50vh] md:h-[60vh] lg:h-screen bg-[#F2F2F2] rounded-3xl order-1 lg:order-2">
+          <video
             src={AboutMe}
             autoPlay
             muted
@@ -108,7 +108,7 @@ const Home = () => {
             controls={false}
             playsInline
             className="w-full h-full object-cover rounded-3xl"
-          ></video> */}
+          ></video>
         </div>
       </div>
 
@@ -184,18 +184,18 @@ const Home = () => {
         Tap this 'tiny' button to listen today's jam =)
       </h1>
       <div className="flex items-center justify-center pt-10 pb-16">
-          <iframe
-            style={{ borderRadius: "12px" }}
-            className="px-10 md:px-36"
-            src="https://embed.music.apple.com/in/album/ho-hey/1754219081?i=1754219314"
-            width="100%"
-            height="152"
-            frameBorder="0"
-            allowFullScreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy"
-          ></iframe>
-        </div>
+        <iframe
+          style={{ borderRadius: "12px" }}
+          className="px-10 md:px-36"
+          src="https://embed.music.apple.com/in/album/ho-hey/1754219081?i=1754219314"
+          width="100%"
+          height="152"
+          frameBorder="0"
+          allowFullScreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+      </div>
       {/* <div className="flex justify-center mt-28 mb-32">
         <button type="button" className="button">
           <div className="button-top">Connect</div>
