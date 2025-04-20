@@ -15,12 +15,12 @@ const Kshitij = () => {
           <img
             src={KshitijLogo}
             alt=""
-            className="h-16 sm:h-20 md:h-24 lg:h-28"
+            className="h-16 sm:h-20 md:h-24 lg:h-28 pointer-events-none select-none"
           />
           <img
             src={KshitijTextBlack}
             alt=""
-            className="h-14 sm:h-16 md:h-20 lg:h-24"
+            className="h-14 sm:h-16 md:h-20 lg:h-24 pointer-events-none select-none"
           />
         </div>
 
@@ -47,7 +47,7 @@ const Kshitij = () => {
 
         <div className="px-4 sm:px-8 md:px-12 lg:px-20">
           <div className="w-full rounded-lg overflow-hidden">
-            <img src={Main} alt="" className="h-full w-full object-contain" />
+            <img src={Main} alt="" className="h-full w-full object-contain pointer-events-none select-none" />
           </div>
         </div>
 
@@ -56,14 +56,14 @@ const Kshitij = () => {
             <img
               src={KshitijPoster}
               alt=""
-              className="h-full w-full object-contain"
+              className="h-full w-full object-contain pointer-events-none select-none"
             />
           </div>
           <div className="w-full sm:w-1/2 rounded-lg overflow-hidden">
             <img
               src={KshitijPoster}
               alt=""
-              className="h-full w-full object-contain"
+              className="h-full w-full object-contain pointer-events-none select-none"
             />
           </div>
         </div>

@@ -26,7 +26,6 @@ import SquareFootPoster2 from "../assets/projects/SquareFoot/SquareFootPoster2.p
 import MoronMediaPoster from "../assets/projects/MoronMedia/MoronMediaPoster.png";
 import MoronMediaPoster2 from "../assets/projects/MoronMedia/MoronMediaPoster2.png";
 import AboutMe from "../assets/AboutMe.mp4";
-import "../pages/connect.css";
 
 const Home = () => {
   return (
@@ -107,6 +106,7 @@ const Home = () => {
             loop
             controls={false}
             playsInline
+            controlsList="nodownload"
             className="w-full h-full object-cover rounded-3xl"
           ></video>
         </div>
@@ -196,13 +196,6 @@ const Home = () => {
           loading="lazy"
         ></iframe>
       </div>
-      {/* <div className="flex justify-center mt-28 mb-32">
-        <button type="button" className="button">
-          <div className="button-top">Connect</div>
-          <div className="button-bottom"></div>
-          <div className="button-base"></div>
-        </button>
-      </div> */}
       <Footer />
     </>
   );

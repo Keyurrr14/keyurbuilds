@@ -12,8 +12,8 @@ const MCC = () => {
       <Navbar2 />
       <div className="mt-24 w-full min-h-screen bg-[#F2F2F2]">
         <div className="px-4 sm:px-8 md:px-12 lg:px-20 py-6 sm:py-8 md:py-10">
-          <img src={MCCLogo} alt="" className="h-20 sm:h-24 md:h-28 lg:h-32" />
-          <img src={MCCText} alt="" className="h-14 sm:h-16 md:h-20 lg:h-24" />
+          <img src={MCCLogo} alt="" className="h-20 sm:h-24 md:h-28 lg:h-32 pointer-events-none select-none" />
+          <img src={MCCText} alt="" className="h-14 sm:h-16 md:h-20 lg:h-24 pointer-events-none select-none" />
         </div>
 
         <div className="px-4 sm:px-8 md:px-12 lg:px-20 w-full lg:w-4/5">
@@ -39,7 +39,7 @@ const MCC = () => {
 
         <div className="px-4 sm:px-8 md:px-12 lg:px-20">
           <div className="w-full rounded-lg overflow-hidden">
-            <img src={Main} alt="" className="h-full w-full object-contain" />
+            <img src={Main} alt="" className="h-full w-full object-contain pointer-events-none select-none" />
           </div>
         </div>
 
@@ -48,14 +48,14 @@ const MCC = () => {
             <img
               src={KshitijPoster}
               alt=""
-              className="h-full w-full object-contain"
+              className="h-full w-full object-contain pointer-events-none select-none"
             />
           </div>
           <div className="w-full sm:w-1/2 rounded-lg overflow-hidden">
             <img
               src={KshitijPoster}
               alt=""
-              className="h-full w-full object-contain"
+              className="h-full w-full object-contain pointer-events-none select-none"
             />
           </div>
         </div>

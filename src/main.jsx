@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
+import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import Kshitij from "./pages/Kshitij";
 import Tedx from "./pages/Tedx";
@@ -15,14 +16,16 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/kshitij" element={<Kshitij />} />
-        <Route path="/tedx" element={<Tedx />} />
-        <Route path="/autolink" element={<AutoLink />} />
-        <Route path="/moronmedia" element={<MoronMedia />} />
-        <Route path="/squarefoot" element={<Squarefoot />} />
-        <Route path="/spliteasy" element={<SplitEasy />} />
-        <Route path="/mcc" element={<MCC />} />
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/kshitij" element={<Kshitij />} />
+          <Route path="/tedx" element={<Tedx />} />
+          <Route path="/autolink" element={<AutoLink />} />
+          <Route path="/moronmedia" element={<MoronMedia />} />
+          <Route path="/squarefoot" element={<Squarefoot />} />
+          <Route path="/spliteasy" element={<SplitEasy />} />
+          <Route path="/mcc" element={<MCC />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   </StrictMode>

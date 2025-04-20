@@ -14,7 +14,7 @@ const SplitEasy = () => {
           <img
             src={SplitEasyLogo}
             alt=""
-            className="h-14 sm:h-16 md:h-18 lg:h-20"
+            className="h-14 sm:h-16 md:h-18 lg:h-20 pointer-events-none select-none"
           />
           <h1 className="font-inter font-bold text-2xl sm:text-3xl md:text-4xl lg:text-6xl mt-5">
             SplitEasy
@@ -44,7 +44,7 @@ const SplitEasy = () => {
 
         <div className="px-4 sm:px-8 md:px-12 lg:px-20">
           <div className="w-full rounded-lg overflow-hidden">
-            <img src={Main} alt="" className="h-full w-full object-contain" />
+            <img src={Main} alt="" className="h-full w-full object-contain pointer-events-none select-none" />
           </div>
         </div>
 
@@ -53,14 +53,14 @@ const SplitEasy = () => {
             <img
               src={KshitijPoster}
               alt=""
-              className="h-full w-full object-contain"
+              className="h-full w-full object-contain pointer-events-none select-none"
             />
           </div>
           <div className="w-full sm:w-1/2 rounded-lg overflow-hidden">
             <img
               src={KshitijPoster}
               alt=""
-              className="h-full w-full object-contain"
+              className="h-full w-full object-contain pointer-events-none select-none"
             />
           </div>
         </div>

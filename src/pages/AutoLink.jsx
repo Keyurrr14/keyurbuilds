@@ -11,7 +11,7 @@ const AutoLink = () => {
       <Navbar2 />
       <div className="mt-24 w-full min-h-screen bg-[#F2F2F2]">
         <div className="px-4 sm:px-8 md:px-12 lg:px-20 py-6 sm:py-8 md:py-10">
-          <img src={AutoLinkLogo} alt="" className="h-16 sm:h-20 md:h-24 lg:h-28" />
+          <img src={AutoLinkLogo} alt="" className="h-16 sm:h-20 md:h-24 lg:h-28 pointer-events-none select-none" />
           <h1 className="font-inter font-bold text-2xl sm:text-3xl md:text-4xl lg:text-6xl mt-5">
             AutoLink
           </h1>
@@ -40,7 +40,7 @@ const AutoLink = () => {
 
         <div className="px-4 sm:px-8 md:px-12 lg:px-20">
           <div className="w-full rounded-lg overflow-hidden">
-            <img src={Main} alt="" className="h-full w-full object-contain" />
+            <img src={Main} alt="" className="h-full w-full object-contain pointer-events-none select-none" />
           </div>
         </div>
 
@@ -49,14 +49,14 @@ const AutoLink = () => {
             <img
               src={KshitijPoster}
               alt=""
-              className="h-full w-full object-contain"
+              className="h-full w-full object-contain pointer-events-none select-none"
             />
           </div>
           <div className="w-full sm:w-1/2 rounded-lg overflow-hidden">
             <img
               src={KshitijPoster}
               alt=""
-              className="h-full w-full object-contain"
+              className="h-full w-full object-contain pointer-events-none select-none"
             />
           </div>
         </div>

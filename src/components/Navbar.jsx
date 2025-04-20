@@ -114,7 +114,7 @@ const Navbar = () => {
       {/* Mobile Menu Button */}
       <div className="fixed top-2 sm:hidden w-[90%] flex justify-between bg-black rounded-full px-4 py-3 mt-3 mx-2 animate-bounce-in z-50">
         <div>
-          <img className="h-6" src={sun} alt="" />
+          <img className="h-6 pointer-events-none select-none" src={sun} alt="" />
         </div>
         <div className="flex items-center gap-1 text-zinc-400">
           <h1 className="text-lg font-semibold">Menu</h1>

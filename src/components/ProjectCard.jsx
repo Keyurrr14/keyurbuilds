@@ -27,12 +27,20 @@ const ProjectCard = ({
         <div className="relative z-10">
           <div className="flex items-center justify-between px-4 sm:px-14 py-5">
             <div className="flex items-center gap-1 sm:gap-4">
-              <img src={logo} alt="" className="h-16 sm:h-28" />
+              <img
+                src={logo}
+                alt=""
+                className="h-16 sm:h-28 pointer-events-none select-none"
+              />
               {logoText.includes(".png") ||
               logoText.includes(".jpg") ||
               logoText.includes(".jpeg") ||
               logoText.includes(".svg") ? (
-                <img src={logoText} alt="" className="h-10 sm:h-20" />
+                <img
+                  src={logoText}
+                  alt=""
+                  className="h-10 sm:h-20 pointer-events-none select-none"
+                />
               ) : (
                 <span className="text-lg sm:text-5xl font-bold">
                   {logoText}
@@ -43,7 +51,7 @@ const ProjectCard = ({
               <img
                 src={arrow}
                 alt=""
-                className="h-10 sm:h-20 hidden lg:block"
+                className="h-10 sm:h-20 hidden lg:block pointer-events-none select-none"
               />
             </div>
           </div>
@@ -54,12 +62,12 @@ const ProjectCard = ({
             <img
               src={poster1}
               alt=""
-              className="h-[60vw] sm:h-[30vw] sm:-mb-10 -rotate-6 transition-all duration-300 border-4 border-white rounded-3xl group-hover:-translate-y-7 group-hover:-rotate-12"
+              className="h-[60vw] sm:h-[30vw] sm:-mb-10 -rotate-6 transition-all duration-300 border-4 border-white rounded-3xl group-hover:-translate-y-7 group-hover:-rotate-12 pointer-events-none select-none"
             />
             <img
               src={poster2}
               alt=""
-              className="hidden sm:block h-[50vw] sm:h-[30vw] -mb-10 rotate-3 transition-all duration-300 border-4 border-white rounded-3xl group-hover:-translate-y-7 group-hover:rotate-12"
+              className="hidden sm:block h-[50vw] sm:h-[30vw] -mb-10 rotate-3 transition-all duration-300 border-4 border-white rounded-3xl group-hover:-translate-y-7 group-hover:rotate-12 pointer-events-none select-none"
             />
           </div>
         </div>

@@ -42,7 +42,11 @@ const Footer = () => {
       }`}
     >
       <div className="flex items-center gap-2 sm:ml-5">
-        <img src={Mail} alt="Mail" className="w-8 sm:w-10 h-8 sm:h-10" />
+        <img
+          src={Mail}
+          alt="Mail"
+          className="w-8 sm:w-10 h-8 sm:h-10 pointer-events-none select-none"
+        />
         <a
           className="font-inter font-medium text-md sm:text-2xl hover:underline"
           href="mailto:keyurrathod9920@gmail.com"
