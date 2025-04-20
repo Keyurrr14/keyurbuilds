@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import sun from "../assets/sun.svg";
+import NavPhoto1 from "../assets/NavPhoto1.png";
+import NavPhoto2 from "../assets/NavPhoto2.png";
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("hey");
@@ -139,12 +141,28 @@ const Navbar = () => {
         </div>
       </div>
 
-      {isMenuOpen && (
-        <div
-          onClick={toggleMenu}
-          className="sm:hidden fixed inset-0 z-40 bg-black/30 backdrop-blur-sm transition-opacity duration-300"
-        ></div>
-      )}
+      {/* Mobile Menu Overlay */}
+      <div
+        className={`sm:hidden fixed inset-0 z-40 bg-black/50 backdrop-blur-sm transition-all duration-300 ${
+          isMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+        }`}
+        onClick={toggleMenu}
+      >
+        <img
+          src={NavPhoto1}
+          alt="Menu decoration"
+          className={`absolute bottom-10 -right-10 h-56 rotate-12 transition-transform duration-300 ${
+            isMenuOpen ? "translate-x-0" : "translate-x-full"
+          }`}
+        />
+        <img
+          src={NavPhoto2}
+          alt="Menu decoration"
+          className={`absolute bottom-36 -left-10 h-56 -rotate-12 transition-transform duration-300 ${
+            isMenuOpen ? "translate-x-0" : "-translate-x-full"
+          }`}
+        />
+      </div>
 
       {/* Mobile Menu */}
       <div

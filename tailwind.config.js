@@ -27,10 +27,32 @@ export default {
             strokeDashoffset: 0,
           },
         },
+        slideInRight: {
+          "0%": {
+            transform: "translate(100%, 100%) rotate(45deg)",
+            opacity: "0",
+          },
+          "100%": {
+            transform: "translate(0, 0) rotate(12deg)",
+            opacity: "1",
+          },
+        },
+        slideInLeft: {
+          "0%": {
+            transform: "translate(-100%, -100%) rotate(-45deg)",
+            opacity: "0",
+          },
+          "100%": {
+            transform: "translate(0, 0) rotate(-12deg)",
+            opacity: "1",
+          },
+        },
       },
       animation: {
         floatUp: "floatUp 1.5s ease-out forwards",
         "bounce-in": "bounceIn 1s cubic-bezier(0.68, -0.55, 0.265, 1.55)",
+        "slide-in-right": "slideInRight 0.3s ease-in-out forwards",
+        "slide-in-left": "slideInLeft 0.3s ease-in-out forwards",
       },
     },
   },
