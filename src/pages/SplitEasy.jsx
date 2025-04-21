@@ -2,8 +2,9 @@ import React from "react";
 import Navbar2 from "../components/Navbar2";
 import SplitEasyLogo from "../assets/projects/SplitEasy/SplitEasyLogo.png";
 import Footer from "../components/Footer";
-import Main from "../assets/projects/Kshitij/Main.png";
+import Main from "../assets/projects/SplitEasy/Main.jpg";
 import KshitijPoster from "../assets/projects/Kshitij/KshitijPoster.png";
+import { AnimatedTablet } from "../components/AnimatedTablet";
 
 const SplitEasy = () => {
   return (
@@ -64,6 +65,30 @@ const SplitEasy = () => {
             and deployment—while also focusing on solving real-world problems in
             an elegant and efficient way.
           </p>
+        </div>
+
+        <div className="flex flex-col mt-20 md:mt-0">
+          <AnimatedTablet
+            titleComponent={
+              <>
+                <h1 className="font-inter text-4xl font-semibold text-black">
+                  Simplify group expenses with <br />
+                  <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
+                    Smart Splitting
+                  </span>
+                </h1>
+              </>
+            }
+          >
+            <img
+              src={Main}
+              alt="hero"
+              height={720}
+              width={1400}
+              className="mx-auto rounded-2xl object-cover h-full"
+              draggable={false}
+            />
+          </AnimatedTablet>
         </div>
 
         <div className="px-4 sm:px-8 md:px-12 lg:px-20">

@@ -1,9 +1,10 @@
 import React from "react";
 import Navbar2 from "../components/Navbar2";
 import MoronMediaLogo from "../assets/projects/MoronMedia/MoronMediaLogo.png";
-import Main from "../assets/projects/Kshitij/Main.png";
+import Main from "../assets/projects/MoronMedia/Main.jpg";
 import KshitijPoster from "../assets/projects/Kshitij/KshitijPoster.png";
 import Footer from "../components/Footer";
+import { AnimatedTablet } from "../components/AnimatedTablet";
 
 const MoronMedia = () => {
   return (
@@ -39,7 +40,7 @@ const MoronMedia = () => {
             presence that matched the scale, energy, and creativity of their
             projects—ranging from music videos and fashion films to large-scale
             live events and brand campaigns. The site needed to be bold,
-            visual-first, and capable of conveying the agency’s unique identity
+            visual-first, and capable of conveying the agency's unique identity
             at a glance.
           </p>
           <p className="font-inter font-medium text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 md:mb-10">
@@ -49,7 +50,7 @@ const MoronMedia = () => {
             dynamic showcase of recent projects—like the Diluminati Tour 2024
             and campaigns for artists such as Iqlipse Nova and Prakriti
             Kakkar—giving users an instant look into the scale and quality of
-            Moron Media’s work. The site architecture was carefully planned to
+            Moron Media's work. The site architecture was carefully planned to
             ensure seamless navigation between their service offerings, past
             work, and contact information.
           </p>
@@ -59,7 +60,7 @@ const MoronMedia = () => {
             load times, transitions, and how the visual elements interact on
             scroll. I incorporated modern web practices to support video
             integration and high-resolution imagery. Every design choice—from
-            typography to color palette—was made to align with Moron Media’s
+            typography to color palette—was made to align with Moron Media's
             bold and youthful brand aesthetic.
           </p>
           <p className="font-inter font-medium text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 md:mb-10">
@@ -69,8 +70,32 @@ const MoronMedia = () => {
             understands what Moron Media does and the kind of impact they make
             in the creative world. Seeing the final product live, and knowing it
             reflects the spirit of a fast-moving, boundary-pushing agency, made
-            this one of the most rewarding projects I’ve worked on.
+            this one of the most rewarding projects I've worked on.
           </p>
+        </div>
+
+        <div className="flex flex-col mt-20 md:mt-0">
+          <AnimatedTablet
+            titleComponent={
+              <>
+                <h1 className="font-inter text-4xl font-semibold text-black">
+                  Unleashing creativity with <br />
+                  <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
+                    Bold Vision
+                  </span>
+                </h1>
+              </>
+            }
+          >
+            <img
+              src={Main}
+              alt="hero"
+              height={720}
+              width={1400}
+              className="mx-auto rounded-2xl object-cover h-full"
+              draggable={false}
+            />
+          </AnimatedTablet>
         </div>
 
         <div className="px-4 sm:px-8 md:px-12 lg:px-20">

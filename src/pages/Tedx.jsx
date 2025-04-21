@@ -1,9 +1,10 @@
 import React from "react";
 import Navbar2 from "../components/Navbar2";
 import TedxLogo from "../assets/projects/TedxMithibaiCollege/TedxLogo.png";
-import Main from "../assets/projects/Kshitij/Main.png";
+import Main from "../assets/projects/TedxMithibaiCollege/Main.jpg";
 import KshitijPoster from "../assets/projects/Kshitij/KshitijPoster.png";
 import Footer from "../components/Footer";
+import { AnimatedTablet } from "../components/AnimatedTablet";
 
 const Tedx = () => {
   return (
@@ -57,9 +58,33 @@ const Tedx = () => {
             By integrating both frontend and backend technologies, I created a
             fully functional and secure platform that enhanced the event
             experience and streamlined the ticketing process, all while
-            maintaining the essence of TED’s commitment to knowledge sharing and
+            maintaining the essence of TED's commitment to knowledge sharing and
             community building.
           </p>
+        </div>
+
+        <div className="flex flex-col mt-20 md:mt-0">
+          <AnimatedTablet
+            titleComponent={
+              <>
+                <h1 className="font-inter text-4xl font-semibold text-black">
+                  Inspiring minds through <br />
+                  <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
+                    Powerful Ideas
+                  </span>
+                </h1>
+              </>
+            }
+          >
+            <img
+              src={Main}
+              alt="hero"
+              height={720}
+              width={1400}
+              className="mx-auto rounded-2xl object-cover h-full"
+              draggable={false}
+            />
+          </AnimatedTablet>
         </div>
 
         <div className="px-4 sm:px-8 md:px-12 lg:px-20">

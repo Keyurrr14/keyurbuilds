@@ -1,9 +1,10 @@
 import React from "react";
 import Navbar2 from "../components/Navbar2";
-import SquarefootLogo from "../assets/projects/Squarefoot/SquarefootLogo.png";
+import SquarefootLogo from "../assets/projects/squarefoot/SquarefootLogo.png";
 import Footer from "../components/Footer";
-import Main from "../assets/projects/Kshitij/Main.png";
+import Main from "../assets/projects/squarefoot/Main.jpg";
 import KshitijPoster from "../assets/projects/Kshitij/KshitijPoster.png";
+import { AnimatedTablet } from "../components/AnimatedTablet";
 
 const Squarefoot = () => {
   return (
@@ -36,7 +37,7 @@ const Squarefoot = () => {
             a Mumbai-based architectural and interior design firm known for its
             expertise in residential, commercial, and hospitality projects. The
             objective was to build a clean, elegant, and functional platform
-            that reflects the studio’s ethos—crafting exceptional spaces with
+            that reflects the studio's ethos—crafting exceptional spaces with
             passion and precision. The site needed to highlight their diverse
             portfolio while communicating their design philosophy, values, and
             client-first approach.
@@ -44,7 +45,7 @@ const Squarefoot = () => {
           <p className="font-inter font-medium text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 md:mb-10">
             The visual design focused on minimalism and sophistication, using a
             neutral color palette, balanced typography, and spacious layouts to
-            echo the firm’s aesthetic sensibilities. I structured the website to
+            echo the firm's aesthetic sensibilities. I structured the website to
             offer seamless navigation through their services, past projects, and
             core values. A prominent emphasis was placed on high-quality imagery
             and a smooth user flow to ensure that the content feels immersive,
@@ -70,6 +71,30 @@ const Squarefoot = () => {
             positions Squarefoot Studio as a trusted and visionary player in the
             architecture and interior design space.
           </p>
+        </div>
+
+        <div className="flex flex-col mt-20 md:mt-0">
+          <AnimatedTablet
+            titleComponent={
+              <>
+                <h1 className="font-inter text-4xl font-semibold text-black">
+                  Crafting exceptional spaces with <br />
+                  <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
+                    Timeless Design
+                  </span>
+                </h1>
+              </>
+            }
+          >
+            <img
+              src={Main}
+              alt="hero"
+              height={720}
+              width={1400}
+              className="mx-auto rounded-2xl object-cover h-full"
+              draggable={false}
+            />
+          </AnimatedTablet>
         </div>
 
         <div className="px-4 sm:px-8 md:px-12 lg:px-20">

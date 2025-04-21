@@ -26,6 +26,7 @@ import SquareFootPoster2 from "../assets/projects/SquareFoot/SquareFootPoster2.p
 import MoronMediaPoster from "../assets/projects/MoronMedia/MoronMediaPoster.png";
 import MoronMediaPoster2 from "../assets/projects/MoronMedia/MoronMediaPoster2.png";
 import AboutMe from "../assets/AboutMe.mp4";
+import MusicNotification from "../components/MusicNotification";
 
 const Home = () => {
   return (
@@ -196,6 +197,8 @@ const Home = () => {
           loading="lazy"
         ></iframe>
       </div>
+
+      <MusicNotification/>
       <Footer />
     </>
   );

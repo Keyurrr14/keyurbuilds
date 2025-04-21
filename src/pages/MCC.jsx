@@ -3,8 +3,9 @@ import Navbar2 from "../components/Navbar2";
 import MCCLogo from "../assets/projects/MCC/MCCLogo.png";
 import MCCText from "../assets/projects/MCC/MCCText.png";
 import Footer from "../components/Footer";
-import Main from "../assets/projects/Kshitij/Main.png";
+import Main from "../assets/projects/MCC/Main.jpg";
 import KshitijPoster from "../assets/projects/Kshitij/KshitijPoster.png";
+import { AnimatedTablet } from "../components/AnimatedTablet";
 
 const MCC = () => {
   return (
@@ -37,9 +38,9 @@ const MCC = () => {
           <p className="font-inter font-medium text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 md:mb-10">
             I co-developed the official website for the Mithibai Cultural
             Committee, the flagship cultural body of Mithibai College known for
-            its vibrant legacy and unmatched achievements across India’s top
+            its vibrant legacy and unmatched achievements across India's top
             cultural festivals. The goal was to create a digital space that
-            captured the essence of the Committee’s impact—from victories at
+            captured the essence of the Committee's impact—from victories at
             Mood Indigo, Youth Festival, and Umang to organizing in-house
             extravaganzas like Annual Day and Mithibai Kshitij. The website was
             designed to celebrate this legacy, showcase events, and serve as a
@@ -53,13 +54,13 @@ const MCC = () => {
             content-rich sections with intuitive navigation. As the design
             requirements evolved, we decided to revamp the project using
             Tailwind CSS to improve development speed, responsiveness, and code
-            maintainability. Tailwind’s utility-first approach allowed us to
+            maintainability. Tailwind's utility-first approach allowed us to
             keep the UI consistent and scalable while reducing the amount of
             redundant custom CSS.
           </p>
           <p className="font-inter font-medium text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 md:mb-10">
             From layout design to content placement, the site was structured to
-            guide visitors through the Committee’s journey. We emphasized major
+            guide visitors through the Committee's journey. We emphasized major
             achievements, leadership highlights, and upcoming event
             announcements while maintaining a youthful and elegant aesthetic.
             High-resolution visuals, carefully placed micro-interactions, and
@@ -75,6 +76,30 @@ const MCC = () => {
             heartbeat of our college and will continue to inspire future
             students.
           </p>
+        </div>
+
+        <div className="flex flex-col mt-20 md:mt-0">
+          <AnimatedTablet
+            titleComponent={
+              <>
+                <h1 className="font-inter text-4xl font-semibold text-black">
+                  Discover the cultural heart of <br />
+                  <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
+                    Mithibai College
+                  </span>
+                </h1>
+              </>
+            }
+          >
+            <img
+              src={Main}
+              alt="hero"
+              height={720}
+              width={1400}
+              className="mx-auto rounded-2xl object-cover h-full"
+              draggable={false}
+            />
+          </AnimatedTablet>
         </div>
 
         <div className="px-4 sm:px-8 md:px-12 lg:px-20">

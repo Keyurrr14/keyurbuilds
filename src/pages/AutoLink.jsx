@@ -1,9 +1,10 @@
 import React from "react";
 import Navbar2 from "../components/Navbar2";
 import AutoLinkLogo from "../assets/projects/AutoLink/AutoLinkLogo.png";
-import Main from "../assets/projects/Kshitij/Main.png";
+import Main from "../assets/projects/AutoLink/Main.jpg";
 import KshitijPoster from "../assets/projects/Kshitij/KshitijPoster.png";
 import Footer from "../components/Footer";
+import { AnimatedTablet } from "../components/AnimatedTablet";
 
 const AutoLink = () => {
   return (
@@ -59,7 +60,7 @@ const AutoLink = () => {
             detect supply-demand patterns by comparing activity within and
             across neighboring hexagons. H3's hierarchical structure also
             enabled scalable real-time tracking and efficient routing, forming
-            the spatial backbone of the platform’s decision-making engine.
+            the spatial backbone of the platform's decision-making engine.
           </p>
           <p className="font-inter font-medium text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 md:mb-10">
             The entire system is designed to be scalable, efficient, and
@@ -69,6 +70,30 @@ const AutoLink = () => {
             transportation solution using modern web technologies and geospatial
             intelligence.
           </p>
+        </div>
+
+        <div className="flex flex-col mt-20 md:mt-0">
+          <AnimatedTablet
+            titleComponent={
+              <>
+                <h1 className="font-inter text-4xl font-semibold text-black">
+                  Experience the future of <br />
+                  <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
+                    Urban Mobility
+                  </span>
+                </h1>
+              </>
+            }
+          >
+            <img
+              src={Main}
+              alt="hero"
+              height={720}
+              width={1400}
+              className="mx-auto rounded-2xl object-cover h-full"
+              draggable={false}
+            />
+          </AnimatedTablet>
         </div>
 
         <div className="px-4 sm:px-8 md:px-12 lg:px-20">

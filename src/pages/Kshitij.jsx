@@ -3,8 +3,9 @@ import Navbar2 from "../components/Navbar2";
 import KshitijLogo from "../assets/projects/Kshitij/KshitijBlack.png";
 import KshitijTextBlack from "../assets/projects/Kshitij/KshitijTextBlack.png";
 import KshitijPoster from "../assets/projects/Kshitij/KshitijPoster.png";
-import Main from "../assets/projects/Kshitij/Main.png";
+import Main from "../assets/projects/Kshitij/Main.jpg";
 import Footer from "../components/Footer";
+import { AnimatedTablet } from "../components/AnimatedTablet";
 
 const Kshitij = () => {
   return (
@@ -35,18 +36,18 @@ const Kshitij = () => {
 
         <div className="px-4 sm:px-8 md:px-12 lg:px-20 w-full lg:w-4/5">
           <p className="font-inter font-medium text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 md:mb-10">
-            As one of Asia’s biggest college cultural festivals, Kshitij draws
+            As one of Asia's biggest college cultural festivals, Kshitij draws
             in over 50,000+ attendees, 700+ committee members, and hosts 45+
             events across 8 departments. I collaborated with a fellow developer
             to design and build the official website for Kshitij's 17th edition,
-            aiming to capture the festival’s grandeur, energy, and legacy.
+            aiming to capture the festival's grandeur, energy, and legacy.
           </p>
           <p className="font-inter font-medium text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 md:mb-10">
             We focused on creating a responsive, modern interface with smooth
             navigation and dynamic content. From detailed event listings and
             committee highlights to dedicated sections for Para Events and
             celebrity talk shows, every part of the site was designed to reflect
-            the festival’s inclusive and vibrant spirit. The website also
+            the festival's inclusive and vibrant spirit. The website also
             featured interactive elements, media galleries, and performance
             highlights, serving as the central hub for participants and visitors
             alike throughout the event.
@@ -57,8 +58,32 @@ const Kshitij = () => {
             and engaged throughout the festival. With its clean layout, mobile
             optimization, and aesthetic that resonated with youth culture, it
             played a significant role in delivering a digital experience that
-            matched the festival’s on-ground vibe.
+            matched the festival's on-ground vibe.
           </p>
+        </div>
+
+        <div className="flex flex-col mt-20 md:mt-0">
+          <AnimatedTablet
+            titleComponent={
+              <>
+                <h1 className="font-inter text-4xl font-semibold text-black">
+                  Experience the grandeur of <br />
+                  <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
+                    Kshitij 2024
+                  </span>
+                </h1>
+              </>
+            }
+          >
+            <img
+              src={Main}
+              alt="hero"
+              height={720}
+              width={1400}
+              className="mx-auto rounded-2xl object-cover h-full"
+              draggable={false}
+            />
+          </AnimatedTablet>
         </div>
 
         <div className="px-4 sm:px-8 md:px-12 lg:px-20">
