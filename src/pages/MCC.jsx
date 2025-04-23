@@ -4,7 +4,9 @@ import MCCLogo from "../assets/projects/MCC/MCCLogo.png";
 import MCCText from "../assets/projects/MCC/MCCText.png";
 import Footer from "../components/Footer";
 import Main from "../assets/projects/MCC/Main.jpg";
-import KshitijPoster from "../assets/projects/Kshitij/KshitijPoster.png";
+import MCCPoster from "../assets/projects/MCC/MCCPoster.png";
+import MCCPoster3 from "../assets/projects/MCC/MCCPoster3.jpg";
+import MCCPoster4 from "../assets/projects/MCC/MCCPoster4.jpg";
 import { AnimatedTablet } from "../components/AnimatedTablet";
 
 const MCC = () => {
@@ -103,9 +105,9 @@ const MCC = () => {
         </div>
 
         <div className="px-4 sm:px-8 md:px-12 lg:px-20">
-          <div className="w-full rounded-lg overflow-hidden">
+          <div className="w-full border-4 border-gray-200 rounded-lg lg:rounded-3xl overflow-hidden">
             <img
-              src={Main}
+              src={MCCPoster3}
               alt=""
               className="h-full w-full object-contain pointer-events-none select-none"
             />
@@ -113,16 +115,16 @@ const MCC = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-2 px-4 sm:px-8 md:px-12 lg:px-20 my-4 sm:my-2 pb-6 sm:pb-10">
-          <div className="w-full sm:w-1/2 rounded-lg overflow-hidden">
+          <div className="w-full sm:w-1/2 border-4 border-gray-200 rounded-lg lg:rounded-3xl overflow-hidden">
             <img
-              src={KshitijPoster}
+              src={MCCPoster4}
               alt=""
               className="h-full w-full object-contain pointer-events-none select-none"
             />
           </div>
-          <div className="w-full sm:w-1/2 rounded-lg overflow-hidden">
+          <div className="w-full sm:w-1/2 border-4 border-gray-200 rounded-lg lg:rounded-3xl overflow-hidden">
             <img
-              src={KshitijPoster}
+              src={MCCPoster}
               alt=""
               className="h-full w-full object-contain pointer-events-none select-none"
             />

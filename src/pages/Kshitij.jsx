@@ -3,6 +3,9 @@ import Navbar2 from "../components/Navbar2";
 import KshitijLogo from "../assets/projects/Kshitij/KshitijBlack.png";
 import KshitijTextBlack from "../assets/projects/Kshitij/KshitijTextBlack.png";
 import KshitijPoster from "../assets/projects/Kshitij/KshitijPoster.png";
+import KshitijPoster3 from "../assets/projects/Kshitij/KshitijPoster3.png";
+import KshitijPoster4 from "../assets/projects/Kshitij/KshitijPoster4.jpg";
+import KshitijPoster5 from "../assets/projects/Kshitij/KshitijPoster5.jpg";
 import Main from "../assets/projects/Kshitij/Main.jpg";
 import Footer from "../components/Footer";
 import { AnimatedTablet } from "../components/AnimatedTablet";
@@ -87,9 +90,9 @@ const Kshitij = () => {
         </div>
 
         <div className="px-4 sm:px-8 md:px-12 lg:px-20">
-          <div className="w-full rounded-lg overflow-hidden">
+          <div className="w-full border-4 border-gray-300 rounded-lg lg:rounded-3xl overflow-hidden">
             <img
-              src={Main}
+              src={KshitijPoster3}
               alt=""
               className="h-full w-full object-contain pointer-events-none select-none"
             />
@@ -97,16 +100,16 @@ const Kshitij = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-2 px-4 sm:px-8 md:px-12 lg:px-20 my-4 sm:my-2 pb-6 sm:pb-10">
-          <div className="w-full sm:w-1/2 rounded-lg overflow-hidden">
+          <div className="w-full sm:w-1/2 border-4 border-gray-300 rounded-lg overflow-hidden">
             <img
-              src={KshitijPoster}
+              src={KshitijPoster4}
               alt=""
               className="h-full w-full object-contain pointer-events-none select-none"
             />
           </div>
-          <div className="w-full sm:w-1/2 rounded-lg overflow-hidden">
+          <div className="w-full sm:w-1/2 border-4 border-gray-300 rounded-lg overflow-hidden">
             <img
-              src={KshitijPoster}
+              src={KshitijPoster5}
               alt=""
               className="h-full w-full object-contain pointer-events-none select-none"
             />

@@ -2,7 +2,9 @@ import React from "react";
 import Navbar2 from "../components/Navbar2";
 import TedxLogo from "../assets/projects/TedxMithibaiCollege/TedxLogo.png";
 import Main from "../assets/projects/TedxMithibaiCollege/Main.jpg";
-import KshitijPoster from "../assets/projects/Kshitij/KshitijPoster.png";
+import TedxPoster3 from "../assets/projects/TedxMithibaiCollege/TedxPoster3.jpg";
+import TedxPoster4 from "../assets/projects/TedxMithibaiCollege/TedxPoster4.jpg";
+import TedxPoster5 from "../assets/projects/TedxMithibaiCollege/TedxPoster5.jpg";
 import Footer from "../components/Footer";
 import { AnimatedTablet } from "../components/AnimatedTablet";
 
@@ -88,9 +90,9 @@ const Tedx = () => {
         </div>
 
         <div className="px-4 sm:px-8 md:px-12 lg:px-20">
-          <div className="w-full rounded-lg overflow-hidden">
+          <div className="w-full border-4 border-gray-300 rounded-lg lg:rounded-3xl overflow-hidden">
             <img
-              src={Main}
+              src={TedxPoster3}
               alt=""
               className="h-full w-full object-contain pointer-events-none select-none"
             />
@@ -98,16 +100,16 @@ const Tedx = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-2 px-4 sm:px-8 md:px-12 lg:px-20 my-4 sm:my-2 pb-6 sm:pb-10">
-          <div className="w-full sm:w-1/2 rounded-lg overflow-hidden">
+          <div className="w-full sm:w-1/2 border-4 border-gray-300 rounded-lg overflow-hidden">
             <img
-              src={KshitijPoster}
+              src={TedxPoster4}
               alt=""
               className="h-full w-full object-contain pointer-events-none select-none"
             />
           </div>
-          <div className="w-full sm:w-1/2 rounded-lg overflow-hidden">
+          <div className="w-full sm:w-1/2 border-4 border-gray-300 rounded-lg overflow-hidden">
             <img
-              src={KshitijPoster}
+              src={TedxPoster5}
               alt=""
               className="h-full w-full object-contain pointer-events-none select-none"
             />

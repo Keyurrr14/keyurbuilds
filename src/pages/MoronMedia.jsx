@@ -2,7 +2,9 @@ import React from "react";
 import Navbar2 from "../components/Navbar2";
 import MoronMediaLogo from "../assets/projects/MoronMedia/MoronMediaLogo.png";
 import Main from "../assets/projects/MoronMedia/Main.jpg";
-import KshitijPoster from "../assets/projects/Kshitij/KshitijPoster.png";
+import MoronMediaPoster3 from "../assets/projects/MoronMedia/MoronMediaPoster3.jpg";
+import MoronMediaPoster4 from "../assets/projects/MoronMedia/MoronMediaPoster4.jpg";
+import MoronMediaPoster5 from "../assets/projects/MoronMedia/MoronMediaPoster5.jpg";
 import Footer from "../components/Footer";
 import { AnimatedTablet } from "../components/AnimatedTablet";
 
@@ -99,9 +101,9 @@ const MoronMedia = () => {
         </div>
 
         <div className="px-4 sm:px-8 md:px-12 lg:px-20">
-          <div className="w-full rounded-lg overflow-hidden">
+          <div className="w-full border-4 border-gray-200 rounded-lg lg:rounded-3xl overflow-hidden">
             <img
-              src={Main}
+              src={MoronMediaPoster3}
               alt=""
               className="h-full w-full object-contain pointer-events-none select-none"
             />
@@ -109,16 +111,16 @@ const MoronMedia = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-2 px-4 sm:px-8 md:px-12 lg:px-20 my-4 sm:my-2 pb-6 sm:pb-10">
-          <div className="w-full sm:w-1/2 rounded-lg overflow-hidden">
+          <div className="w-full sm:w-1/2 border-4 border-gray-200 rounded-lg lg:rounded-3xl overflow-hidden">
             <img
-              src={KshitijPoster}
+              src={MoronMediaPoster4}
               alt=""
               className="h-full w-full object-contain pointer-events-none select-none"
             />
           </div>
-          <div className="w-full sm:w-1/2 rounded-lg overflow-hidden">
+          <div className="w-full sm:w-1/2 border-4 border-gray-200 rounded-lg lg:rounded-3xl overflow-hidden">
             <img
-              src={KshitijPoster}
+              src={MoronMediaPoster5}
               alt=""
               className="h-full w-full object-contain pointer-events-none select-none"
             />

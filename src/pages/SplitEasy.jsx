@@ -1,6 +1,16 @@
 import React from "react";
 import Navbar2 from "../components/Navbar2";
 import SplitEasyLogo from "../assets/projects/SplitEasy/SplitEasyLogo.png";
+import SplitEasyPoster3 from "../assets/projects/SplitEasy/SplitEasyPoster3.jpg";
+import SplitEasyPoster4 from "../assets/projects/SplitEasy/SplitEasyPoster4.jpg";
+import SplitEasyPoster5 from "../assets/projects/SplitEasy/SplitEasyPoster5.jpg";
+import SplitEasyPoster6 from "../assets/projects/SplitEasy/SplitEasyPoster6.jpg";
+import SplitEasyPoster7 from "../assets/projects/SplitEasy/SplitEasyPoster7.jpg";
+import SplitEasyPoster8 from "../assets/projects/SplitEasy/SplitEasyPoster8.jpg";
+import SplitEasyPoster9 from "../assets/projects/SplitEasy/SplitEasyPoster9.jpg";
+import SplitEasyPoster10 from "../assets/projects/SplitEasy/SplitEasyPoster10.jpg";
+import SplitEasyPoster11 from "../assets/projects/SplitEasy/SplitEasyPoster11.jpg";
+import SplitEasyPoster12 from "../assets/projects/SplitEasy/SplitEasyPoster12.jpg";
 import Footer from "../components/Footer";
 import Main from "../assets/projects/SplitEasy/Main.jpg";
 import KshitijPoster from "../assets/projects/Kshitij/KshitijPoster.png";
@@ -92,26 +102,83 @@ const SplitEasy = () => {
         </div>
 
         <div className="px-4 sm:px-8 md:px-12 lg:px-20">
-          <div className="w-full rounded-lg overflow-hidden">
+          <div className="w-full border-4 border-gray-200 rounded-lg lg:rounded-3xl overflow-hidden">
             <img
-              src={Main}
+              src={SplitEasyPoster3}
+              alt=""
+              className="h-full w-full object-contain pointer-events-none select-none"
+            />
+          </div>
+        </div>
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-2 px-4 sm:px-8 md:px-12 lg:px-20 my-4 sm:my-2">
+          <div className="w-full sm:w-1/2 border-4 border-gray-200 rounded-lg lg:rounded-3xl overflow-hidden">
+            <img
+              src={SplitEasyPoster4}
+              alt=""
+              className="h-full w-full object-contain pointer-events-none select-none"
+            />
+          </div>
+          <div className="w-full sm:w-1/2 border-4 border-gray-200 rounded-lg lg:rounded-3xl overflow-hidden">
+            <img
+              src={SplitEasyPoster5}
               alt=""
               className="h-full w-full object-contain pointer-events-none select-none"
             />
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 sm:gap-2 px-4 sm:px-8 md:px-12 lg:px-20 my-4 sm:my-2 pb-6 sm:pb-10">
-          <div className="w-full sm:w-1/2 rounded-lg overflow-hidden">
+        <div className="px-4 sm:px-8 md:px-12 lg:px-20">
+          <div className="w-full border-4 border-gray-200 rounded-lg lg:rounded-3xl overflow-hidden">
             <img
-              src={KshitijPoster}
+              src={SplitEasyPoster6}
               alt=""
               className="h-full w-full object-contain pointer-events-none select-none"
             />
           </div>
-          <div className="w-full sm:w-1/2 rounded-lg overflow-hidden">
+        </div>
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-2 px-4 sm:px-8 md:px-12 lg:px-20 my-4 sm:my-2">
+          <div className="w-full sm:w-1/2 border-4 border-gray-200 rounded-lg lg:rounded-3xl overflow-hidden">
             <img
-              src={KshitijPoster}
+              src={SplitEasyPoster7}
+              alt=""
+              className="h-full w-full object-contain pointer-events-none select-none"
+            />
+          </div>
+          <div className="w-full sm:w-1/2 border-4 border-gray-200 rounded-lg lg:rounded-3xl overflow-hidden">
+            <img
+              src={SplitEasyPoster8}
+              alt=""
+              className="h-full w-full object-contain pointer-events-none select-none"
+            />
+          </div>
+        </div>
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-2 px-4 sm:px-8 md:px-12 lg:px-20 my-4 sm:my-2">
+          <div className="w-full sm:w-1/2 border-4 border-gray-200 rounded-lg lg:rounded-3xl overflow-hidden">
+            <img
+              src={SplitEasyPoster9}
+              alt=""
+              className="h-full w-full object-contain pointer-events-none select-none"
+            />
+          </div>
+          <div className="w-full sm:w-1/2 border-4 border-gray-200 rounded-lg lg:rounded-3xl overflow-hidden">
+            <img
+              src={SplitEasyPoster10}
+              alt=""
+              className="h-full w-full object-contain pointer-events-none select-none"
+            />
+          </div>
+        </div>
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-2 px-4 sm:px-8 md:px-12 lg:px-20 my-4 sm:my-2 pb-6 sm:pb-10">
+          <div className="w-full sm:w-1/2 border-4 border-gray-200 rounded-lg lg:rounded-3xl overflow-hidden">
+            <img
+              src={SplitEasyPoster11}
+              alt=""
+              className="h-full w-full object-contain pointer-events-none select-none"
+            />
+          </div>
+          <div className="w-full sm:w-1/2 border-4 border-gray-200 rounded-lg lg:rounded-3xl overflow-hidden">
+            <img
+              src={SplitEasyPoster12}
               alt=""
               className="h-full w-full object-contain pointer-events-none select-none"
             />
