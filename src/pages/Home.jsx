@@ -39,15 +39,36 @@ const Home = () => {
     "https://embed.music.apple.com/in/album/invisible-string/1524793738?i=1524793912",
   ];
 
-  const [currentSongIndex, setCurrentSongIndex] = useState(0);
+  const [currentSongIndex, setCurrentSongIndex] = useState(() => {
+    // Calculate days since January 1, 2024 (or any fixed start date)
+    const startDate = new Date(2024, 0, 1); // January 1, 2024
+    const today = new Date();
+    today.setHours(0, 0, 0, 0); // Reset time to start of day
+    const daysSinceStart = Math.floor(
+      (today - startDate) / (1000 * 60 * 60 * 24)
+    );
+    return daysSinceStart % songs.length;
+  });
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSongIndex((prevIndex) => (prevIndex + 1) % songs.length);
-    }, 10 * 60 * 1000); // 10 minutes in milliseconds
+    const scheduleNextSongChange = () => {
+      const now = new Date();
+      const tomorrow = new Date();
+      tomorrow.setDate(tomorrow.getDate() + 1);
+      tomorrow.setHours(0, 0, 0, 0); // Change at midnight
 
-    return () => clearInterval(interval);
-  }, []);
+      const timeUntilNext = tomorrow.getTime() - now.getTime();
+      return setTimeout(() => {
+        const newIndex = (currentSongIndex + 1) % songs.length;
+        setCurrentSongIndex(newIndex);
+        // Schedule the next day's change
+        scheduleNextSongChange();
+      }, timeUntilNext);
+    };
+
+    const timeoutId = scheduleNextSongChange();
+    return () => clearTimeout(timeoutId);
+  }, [currentSongIndex]);
 
   return (
     <>
