@@ -1,14 +1,52 @@
 import React, { useState, useEffect } from "react";
 
+const songs = [
+  "https://embed.music.apple.com/in/album/ho-hey/1754219081?i=1754219314",
+  "https://embed.music.apple.com/in/album/evergreen/1233681655?i=1233681662",
+  "https://embed.music.apple.com/in/album/open-arms-feat-travis-scott/1658650093?i=1658650800",
+  "https://embed.music.apple.com/in/album/7-years/1081573096?i=1081573445",
+  "https://embed.music.apple.com/in/album/invisible-string/1524793738?i=1524793912",
+];
+
 const MusicNotification = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [isLoaded, setIsLoaded] = useState(false);
+  const [currentSongIndex, setCurrentSongIndex] = useState(() => {
+    // Calculate days since January 1, 2024 (or any fixed start date)
+    const startDate = new Date(2024, 0, 1); // January 1, 2024
+    const today = new Date();
+    today.setHours(0, 0, 0, 0); // Reset time to start of day
+    const daysSinceStart = Math.floor(
+      (today - startDate) / (1000 * 60 * 60 * 24)
+    );
+    return daysSinceStart % songs.length;
+  });
 
   useEffect(() => {
     // Trigger the animation after component mounts
     setIsLoaded(true);
   }, []);
+
+  useEffect(() => {
+    const scheduleNextSongChange = () => {
+      const now = new Date();
+      const tomorrow = new Date();
+      tomorrow.setDate(tomorrow.getDate() + 1);
+      tomorrow.setHours(0, 0, 0, 0); // Change at midnight
+
+      const timeUntilNext = tomorrow.getTime() - now.getTime();
+      return setTimeout(() => {
+        const newIndex = (currentSongIndex + 1) % songs.length;
+        setCurrentSongIndex(newIndex);
+        // Schedule the next day's change
+        scheduleNextSongChange();
+      }, timeUntilNext);
+    };
+
+    const timeoutId = scheduleNextSongChange();
+    return () => clearTimeout(timeoutId);
+  }, [currentSongIndex]);
 
   const handleClose = () => {
     setIsOpen(false);
@@ -56,7 +94,7 @@ const MusicNotification = () => {
               </div>
               <iframe
                 style={{ borderRadius: "12px" }}
-                src="https://embed.music.apple.com/in/album/ho-hey/1754219081?i=1754219314"
+                src={songs[currentSongIndex]}
                 width="100%"
                 height="152"
                 frameBorder="0"
