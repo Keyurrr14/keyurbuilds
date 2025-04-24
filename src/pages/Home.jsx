@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import AnimateBlob from "../components/AnimateBlob";
 import Footer from "../components/Footer";
 import ProjectCard from "../components/ProjectCard";
+import KshitijTicketingLogo from "../assets/projects/KshitijTicketing/KshitijTicketingLogo.png";
+import KshitijTicketingPoster from "../assets/projects/KshitijTicketing/KshitijTicketingPoster.jpg";
 import KshitijBlack from "../assets/projects/Kshitij/KshitijBlack.png";
 import KshitijTextBlack from "../assets/projects/Kshitij/KshitijTextBlack.png";
 import KshitijPoster from "../assets/projects/Kshitij/KshitijPoster.png";
@@ -29,6 +31,24 @@ import AboutMe from "../assets/AboutMe.mp4";
 import MusicNotification from "../components/MusicNotification";
 
 const Home = () => {
+  const songs = [
+    "https://embed.music.apple.com/in/album/ho-hey/1754219081?i=1754219314",
+    "https://embed.music.apple.com/in/album/evergreen/1233681655?i=1233681662",
+    "https://embed.music.apple.com/in/album/open-arms-feat-travis-scott/1658650093?i=1658650800",
+    "https://embed.music.apple.com/in/album/7-years/1081573096?i=1081573445",
+    "https://embed.music.apple.com/in/album/invisible-string/1524793738?i=1524793912",
+  ];
+
+  const [currentSongIndex, setCurrentSongIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSongIndex((prevIndex) => (prevIndex + 1) % songs.length);
+    }, 10 * 60 * 1000); // 10 minutes in milliseconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <>
       <Navbar />
@@ -126,6 +146,14 @@ const Home = () => {
       </div>
 
       <ProjectCard
+        logo={KshitijTicketingLogo}
+        logoText=" "
+        description="Kshitij, Mithibai College's annual cultural festival, is one of Asia's biggest, featuring 45+ events, 700+ committee members, and over 50,000 attendees. With Para Events, celebrity performances, and grand prizes, the 17th edition promises an unforgettable celebration."
+        poster1={KshitijTicketingPoster}
+        poster2={KshitijPoster2}
+        route="/kshitij-ticketing"
+      />
+      <ProjectCard
         logo={KshitijBlack}
         logoText={KshitijTextBlack}
         description="Kshitij, Mithibai College's annual cultural festival, is one of Asia's biggest, featuring 45+ events, 700+ committee members, and over 50,000 attendees. With Para Events, celebrity performances, and grand prizes, the 17th edition promises an unforgettable celebration."
@@ -188,7 +216,7 @@ const Home = () => {
         <iframe
           style={{ borderRadius: "12px" }}
           className="px-10 md:px-36"
-          src="https://embed.music.apple.com/in/album/ho-hey/1754219081?i=1754219314"
+          src={songs[currentSongIndex]}
           width="100%"
           height="152"
           frameBorder="0"
@@ -198,7 +226,7 @@ const Home = () => {
         ></iframe>
       </div>
 
-      <MusicNotification/>
+      <MusicNotification />
       <Footer />
     </>
   );

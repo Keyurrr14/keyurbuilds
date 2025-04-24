@@ -5,6 +5,7 @@ import "./index.css";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import Kshitij from "./pages/Kshitij";
+import KshitijTicketing from "./pages/KshitijTicketing";
 import Tedx from "./pages/Tedx";
 import AutoLink from "./pages/AutoLink";
 import MoronMedia from "./pages/MoronMedia";
@@ -19,6 +20,7 @@ createRoot(document.getElementById("root")).render(
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/kshitij" element={<Kshitij />} />
+          <Route path="/kshitij-ticketing" element={<KshitijTicketing />} />
           <Route path="/tedx" element={<Tedx />} />
           <Route path="/autolink" element={<AutoLink />} />
           <Route path="/moronmedia" element={<MoronMedia />} />

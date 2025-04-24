@@ -23,7 +23,7 @@ const ProjectCard = ({
         className="bg-[#F2F2F2] rounded-3xl font-inter overflow-hidden group relative cursor-pointer"
         onClick={handleClick}
       >
-        <div className="absolute -top-64 -right-80 sm:-top-20 sm:-right-10 w-[500px] h-[500px] rounded-full blur-[100px] transition-all duration-300 group-hover:bg-yellow-400 group-hover:blur-[200px] sm:group-hover:blur-[150px] z-0"></div>
+        <div className="absolute -top-64 -right-80 sm:-top-36 sm:-right-36 w-[800px] h-[800px] rounded-full blur-[3000px] transition-all duration-300 group-hover:bg-yellow-400 group-hover:blur-[500px] sm:group-hover:blur-[250px] z-0"></div>
         <div className="relative z-10">
           <div className="flex items-center justify-between px-4 sm:px-14 py-5">
             <div className="flex items-center gap-1 sm:gap-4">
