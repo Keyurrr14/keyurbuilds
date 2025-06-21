@@ -68,7 +68,7 @@ const Home = () => {
 
     const timeoutId = scheduleNextSongChange();
     return () => clearTimeout(timeoutId);
-  }, [currentSongIndex]);
+  }, [currentSongIndex, songs.length]);
 
   return (
     <>

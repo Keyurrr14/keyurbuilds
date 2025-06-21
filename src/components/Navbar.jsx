@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import sun from "../assets/sun.svg";
+import { Link } from "react-router-dom";
 import NavPhoto1 from "../assets/NavPhoto1.png";
 import NavPhoto2 from "../assets/NavPhoto2.png";
+import sun from "../assets/sun.svg";
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("hey");
@@ -83,6 +84,21 @@ const Navbar = () => {
       </div>
       <div
         className={`px-2 sm:px-3 md:px-4 py-1 sm:py-2 my-1 sm:my-2 rounded-full ${
+          activeLink === "components" ? "bg-[#4D4000] text-yellow-400" : ""
+        }`}
+      >
+        <Link
+          to="/components"
+          onClick={() => {
+            setActiveLink("components");
+            setIsMenuOpen(false);
+          }}
+        >
+          Components
+        </Link>
+      </div>
+      <div
+        className={`px-2 sm:px-3 md:px-4 py-1 sm:py-2 my-1 sm:my-2 rounded-full ${
           activeLink === "chat" ? "bg-[#4D4000] text-yellow-400" : ""
         }`}
       >
@@ -114,7 +130,11 @@ const Navbar = () => {
       {/* Mobile Menu Button */}
       <div className="fixed top-2 sm:hidden w-[90%] flex justify-between bg-black rounded-full px-4 py-3 mt-3 mx-2 animate-bounce-in z-50">
         <div>
-          <img className="h-6 pointer-events-none select-none" src={sun} alt="" />
+          <img
+            className="h-6 pointer-events-none select-none"
+            src={sun}
+            alt=""
+          />
         </div>
         <div className="flex items-center gap-1 text-zinc-400">
           <h1 className="text-lg font-semibold">Menu</h1>

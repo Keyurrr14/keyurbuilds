@@ -12,6 +12,7 @@ import MoronMedia from "./pages/MoronMedia";
 import Squarefoot from "./pages/Squarefoot";
 import SplitEasy from "./pages/SplitEasy";
 import MCC from "./pages/MCC";
+import Components from "./pages/Components";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -27,6 +28,7 @@ createRoot(document.getElementById("root")).render(
           <Route path="/squarefoot" element={<Squarefoot />} />
           <Route path="/spliteasy" element={<SplitEasy />} />
           <Route path="/mcc" element={<MCC />} />
+          <Route path="/components" element={<Components />} />
         </Route>
       </Routes>
     </BrowserRouter>
